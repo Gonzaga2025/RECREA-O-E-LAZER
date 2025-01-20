@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Recreação e Lazer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .quiz-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        .question {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .options label {
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .correct {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        .incorrect {
+            background-color: #FF4C4C;
+            color: white;
+            font-weight: bold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Quiz de Recreação e Lazer</h1>
+<h2>Pel B - CBEF/2024</h2>
+    <form id="quizForm">
+        
+        <div class="question">1. Segundo Brêtas (1997), como a recreação pode ser compreendida?</div>
+        <div class="options">
+            <label><input type="radio" name="q1" value="A"> A) Uma atividade exclusiva para crianças, promovendo apenas diversão.</label>
+            <label><input type="radio" name="q1" value="B"> B) Uma prática recreativa sem impacto na saúde mental.</label>
+            <label><input type="radio" name="q1" value="C"> C) O ato de criar, recriar e recriar-se, ligado à ação do homem sobre o mundo.</label>
+            <label><input type="radio" name="q1" value="D"> D) Uma prática esportiva obrigatória para todas as idades.</label>
+            <label><input type="radio" name="q1" value="E"> E) Uma atividade voltada unicamente para o ambiente escolar.</label>
+        </div>
+
+        <div class="question">2. De acordo com Parker (1978), quais são as principais divisões do tempo no contexto do lazer?</div>
+        <div class="options">
+            <label><input type="radio" name="q2" value="A"> A) Tempo cronológico, tempo útil e tempo livre.</label>
+            <label><input type="radio" name="q2" value="B"> B) Tempo psicobiológico, tempo socioeconômico, tempo sociocultural e tempo livre.</label>
+            <label><input type="radio" name="q2" value="C"> C) Tempo de descanso, tempo de trabalho e tempo de lazer.</label>
+            <label><input type="radio" name="q2" value="D"> D) Tempo de socialização, tempo de aprendizado e tempo de diversão.</label>
+            <label><input type="radio" name="q2" value="E"> E) Tempo de educação, tempo físico e tempo simbólico.</label>
+        </div>
+
+ <div class="question">3. Segundo Queiroz e Martins (2002), o brincar pode ser definido como:</div>
+        <div class="options">
+            <label><input type="radio" name="q3" value="A"> A) Uma atividade obrigatória para o desenvolvimento motor.</label>
+            <label><input type="radio" name="q3" value="B"> B) Uma proposta criativa e recreativa, espontânea, com regras flexíveis e objetivo lúdico.</label>
+            <label><input type="radio" name="q3" value="C"> C) Um conjunto de jogos de regras que visam à competição saudável.</label>
+            <label><input type="radio" name="q3" value="D"> D) Uma prática recreativa que segue regras rígidas para aprendizado.</label>
+            <label><input type="radio" name="q3" value="E"> E) Um meio de avaliar o desempenho escolar da criança.</label>
+        </div>
+
+ <div class="question">4. Para Kishimoto (1996), o brinquedo é caracterizado por:</div>
+        <div class="options">
+            <label><input type="radio" name="q4" value="A"> A) Ser um objeto com regras rígidas e pré-determinadas.</label>
+            <label><input type="radio" name="q4" value="B"> B) Supor uma relação íntima com o sujeito e indeterminação quanto ao uso.</label>
+            <label><input type="radio" name="q4" value="C"> C) Ser utilizado exclusivamente em contextos pedagógicos formais.</label>
+            <label><input type="radio" name="q4" value="D"> D) Focar no desenvolvimento físico em detrimento do cognitivo.</label>
+            <label><input type="radio" name="q4" value="E"> E) Ter função exclusivamente decorativa no ambiente escolar.</label>
+        </div>
+
+        <div class="question">5. Segundo Costa et al. (2007), quais são os principais sintomas psicológicos do estresse em policiais militares?</div>
+        <div class="options">
+            <label><input type="radio" name="q5" value="A"> A) Apenas sintomas físicos como dores musculares e fadiga extrema.</label>
+            <label><input type="radio" name="q5" value="B"> B) Nervosismo, irritabilidade excessiva, raiva prolongada e perda do senso de humor.</label>
+            <label><input type="radio" name="q5" value="C"> C) Melhor concentração e foco durante o trabalho.</label>
+            <label><input type="radio" name="q5" value="D"> D) Aumento do desempenho físico sem prejuízo psicológico.</label>
+            <label><input type="radio" name="q5" value="E"> E) Apenas sintomas transitórios e sem impacto na vida profissional.</label>
+        </div>
+
+ <div class="question">6. De acordo com Brito et al. (2018), quais são os principais fatores estressores na profissão policial militar?</div>
+        <div class="options">
+            <label><input type="radio" name="q6" value="A"> A) Jornadas de trabalho equilibradas e bom suporte psicológico.</label>
+            <label><input type="radio" name="q6" value="B"> B) Jornada excessiva, baixa remuneração, logística precária e falta de motivação.</label>
+            <label><input type="radio" name="q6" value="C"> C) Excesso de tempo livre e pouca responsabilidade.</label>
+            <label><input type="radio" name="q6" value="D"> D) Apoio incondicional da sociedade e da corporação.</label>
+            <label><input type="radio" name="q6" value="E"> E) Redução de tarefas e boas condições de trabalho.</label>
+        </div>
+
+        <div class="question">7. Segundo Schwartz (2004), os jogos cooperativos têm como principal característica:</div>
+        <div class="options">
+            <label><input type="radio" name="q7" value="A"> A) A competição como objetivo final.</label>
+            <label><input type="radio" name="q7" value="B"> B) O desenvolvimento de habilidades individuais.</label>
+            <label><input type="radio" name="q7" value="C"> C) A ênfase na cooperação e no desenvolvimento coletivo.</label>
+            <label><input type="radio" name="q7" value="D"> D) A criação de rivalidades saudáveis.</label>
+            <label><input type="radio" name="q7" value="E"> E) A padronização de regras para todos os participantes.</label>
+        </div>
+  <div class="question">8. De acordo com Soler (2002), quais são os principais objetivos das gincanas?</div>
+        <div class="options">
+            <label><input type="radio" name="q8" value="A"> A) Promover a competição e a busca por resultados individuais.</label>
+            <label><input type="radio" name="q8" value="B"> B) Testar habilidades físicas, mentais e promover a união entre os participantes.</label>
+            <label><input type="radio" name="q8" value="C"> C) Avaliar o desempenho físico dos participantes de forma rigorosa.</label>
+            <label><input type="radio" name="q8" value="D"> D) Criar um ambiente de alta competitividade para incentivar o aprendizado.</label>
+            <label><input type="radio" name="q8" value="E"> E) Estimular a prática de esportes competitivos em alto rendimento.</label>
+        </div>
+
+        <div class="question">9. Segundo Silva (2011), a importância da recreação e do lazer para o ser humano está relacionada a:</div>
+        <div class="options">
+            <label><input type="radio" name="q9" value="A"> A) Desenvolvimento de novas habilidades, aumento da criatividade e qualidade de vida.</label>
+            <label><input type="radio" name="q9" value="B"> B) Melhoria apenas no desempenho esportivo.</label>
+            <label><input type="radio" name="q9" value="C"> C) Redução da capacidade de concentração e foco.</label>
+            <label><input type="radio" name="q9" value="D"> D) Promoção de atividades exaustivas para ocupação do tempo.</label>
+            <label><input type="radio" name="q9" value="E"> E) Aumento da competitividade no ambiente escolar.</label>
+        </div>
+
+        <div class="question">10. De acordo com a Constituição Federal de 1988, o lazer é considerado:</div>
+        <div class="options">
+            <label><input type="radio" name="q10" value="A"> A) Um direito social garantido pelo Artigo 6º.</label>
+            <label><input type="radio" name="q10" value="B"> B) Um privilégio acessível a poucos grupos sociais.</label>
+            <label><input type="radio" name="q10" value="C"> C) Uma obrigação para todos os trabalhadores.</label>
+            <label><input type="radio" name="q10" value="D"> D) Uma atividade exclusiva de crianças e adolescentes.</label>
+            <label><input type="radio" name="q10" value="E"> E) Uma prática opcional sem impacto na qualidade de vida.</label>
+        </div>
+
+        <button type="button" onclick="verificarRespostas()">Verificar Respostas</button>
+    </form>
+
+    <div id="result" class="result"></div>
+</div>
+
+<style>
+    .footer {
+        text-align: right;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        padding-right: 20px;
+    }
+    .footer img {
+        width: 5%; /* Ajuste o tamanho da imagem em porcentagem conforme necessário */
+        height: auto;
+        margin-left: 10px;
+    }
+</style>
+
+<div class="footer">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujEW-bCBfkd5HRCkXODrtqKkFlxe54NCjtQ&s/50" alt="Logo">
+    3° Sgt PM Gonzaga - Desenvolvedor
+</div>
+
+<script>
+    function verificarRespostas() {
+        let respostasCorretas = {
+            q1: 'C',
+            q2: 'B', q3: 'B', q4: 'B', q5: 'B', q6: 'B', q7: 'C' , q8: 'B', q9: 'A', q10: 'A'
+        };
+
+        let pontuacao = 0;
+        let totalQuestoes = Object.keys(respostasCorretas).length;
+
+        for (let questao in respostasCorretas) {
+            let selecionada = document.querySelector(`input[name="${questao}"]:checked`);
+            let opcoes = document.querySelectorAll(`input[name="${questao}"]`);
+
+            if (selecionada) {
+                let label = selecionada.parentNode;
+                if (selecionada.value === respostasCorretas[questao]) {
+                    label.classList.add('correct');
+                    pontuacao++;
+                } else {
+                    label.classList.add('incorrect');
+                }
+            }
+
+            // Destacar a resposta correta
+            opcoes.forEach(opcao => {
+                if (opcao.value === respostasCorretas[questao]) {
+                    opcao.parentNode.classList.add('correct');
+                }
+            });
+        }
+
+        let resultadoTexto = `Você acertou ${pontuacao} de ${totalQuestoes} questões!`;
+        document.getElementById('result').innerText = resultadoTexto;
+    }
+</script>
+
+</body>
+</html>
